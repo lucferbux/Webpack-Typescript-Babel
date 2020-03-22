@@ -1,0 +1,47 @@
+{
+  "name": "webpack-babel-typescript",
+  "version": "1.0.0",
+  "description": "Template of a Webpack Babel with Typescript project",
+  "main": "index.ts",
+  "scripts": {
+    "clean": "rm dist/*",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "webpack --mode=production",
+    "build": "npm run build:types && npm run build:js"
+  },
+  "types": "dist/types/index.d.ts",
+  "keywords": [
+    "template",
+    "webpack",
+    "typescript",
+    "babel"
+  ],
+  "author": "lucasfernandezaragon@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-typescript": "^7.9.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "file-loader": "^6.0.0",
+    "html-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "url-loader": "^4.0.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "terser": "^4.6.7"
+  }
+}
