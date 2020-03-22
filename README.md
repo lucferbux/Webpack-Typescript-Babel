@@ -33,24 +33,12 @@ You can start to develop your project, use the ```index.html```, ```index.ts```,
 
 3. Start dev server
 
-To start a new dev server with auto-reloading just run ```npm run start:dev``` to start a new webserver.
+To start a new dev server with auto-reloading just run ```npm run type-check:watch``` to start a new webserver.
 
 ## Deployment
 
 To create a production build:
 
 ```
-npm run build-prod
-```
-
-To create a development build:
-
-```
-npm run build-dev
-```
-
-## Running
-
-```
-node dist/bundle.js
+npm run build
 ```
