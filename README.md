@@ -54,3 +54,6 @@ bash deploy.sh -u yourdomain.com -d NameOfFile
 
 ### Certificates
 Right now the certificates are self firmed and invalid, just replace the old certificates inside *nginx/certificates* with the new ones and modify the *nginx.conf* file with the new name of the files.
+
+### Nginx Configuration
+This project uses nginx as a web server/reverese proxy, you can modify the properties inside *nginx/nginx.conf*

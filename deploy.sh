@@ -28,7 +28,7 @@ if [ -d "$WORKING_DIR.zip" ]; then rm -Rf $WORKING_DIR.zip; fi
 
 
 # Build and bundle the app
-npm run build-prod
+npm run build
 
 # Create the new working directory
 mkdir $WORKING_DIR
