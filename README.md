@@ -1,6 +1,8 @@
 # Webpack with Babel for Typescript
 
-In this template we will check a Typescript app with retrocompatibility to older versions thanks to Babel.
+> Typescript project with Webpack and Babel support for bundling and compiling to backward compatibility
+
+![Header](meta/Header.png)
 
 ## Requirements
 
@@ -21,19 +23,22 @@ The Goal of this application is to bundle all the files in development process t
 
 ## Setup
 
+
 1. Download node and run the following command
 
 ```
 npm install
 ```
 
-2. Develop your project
+2. Change the **src/images/icon.png** to modify the favicon, see more [here](https://github.com/jantimon/favicons-webpack-plugin)
 
-You can start to develop your project, use the ```index.html```, ```index.ts```, and ```styles.scss``` files to start the development process. These files, alongside all the imports will be later bundled and compiled onto a minimize version in the ```./dist/*``` folder.
+3. Start modifying the html, css and typescript files located in **src** folder
 
-3. Start dev server
+4. To start livewatch of the type just run
 
-To start a new dev server with auto-reloading just run ```npm run type-check:watch``` to start a new webserver.
+```
+npm run type-check:watch
+```
 
 ## Deployment
 
